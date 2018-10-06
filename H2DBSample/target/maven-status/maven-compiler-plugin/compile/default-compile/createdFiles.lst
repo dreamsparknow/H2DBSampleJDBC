@@ -1,0 +1,5 @@
+com\example\H2DBSample\Connection\MyConnection.class
+com\example\H2DBSample\model\Address.class
+com\example\H2DBSample\App.class
+com\example\H2DBSample\model\Customer.class
+com\example\H2DBSample\persistence\service\MyPersistenceService.class
