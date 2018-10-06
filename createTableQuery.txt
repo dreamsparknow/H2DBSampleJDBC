@@ -1,0 +1,29 @@
+DROP Table Customer if exists;
+
+
+CREATE TABLE Customer(
+    id INT NOT NULL auto_increment,
+    name VARCHAR(60),
+   dob DATE,
+    homePhone VARCHAR(15),
+    cellphone VARCHAR(15),
+    PRIMARY KEY (ID)
+);
+
+
+
+
+DROP Table Address if exists;
+
+
+
+CREATE TABLE Address(
+    id INT NOT NULL auto_increment,
+    street VARCHAR(60),
+    city VARCHAR(30),
+    zipCode VARCHAR(15),
+    country VARCHAR(5),
+    custId INT NOT NULL,
+    PRIMARY KEY (ID), 
+    FOREIGN KEY (custID) REFERENCES Customer(ID)
+);
